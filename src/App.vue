@@ -1,12 +1,25 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <!-- <router-view></router-view> -->
+    <table>
+      <tr>
+        <td>
+          <Todo/>
+        </td>
+        <td>
+          <Done/>
+        </td>
+      </tr>
+    </table>
   </div>
 </template>
 
 <script>
+import Todo from 'components/Todo'
+import Done from 'components/Done'
 export default {
-  name: 'app'
+  name: 'app',
+  components: { Todo, Done }
 }
 </script>
 
